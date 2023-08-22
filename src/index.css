@@ -1,69 +1,156 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+/* css reset code  */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+html {
+    font-size: 16px;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+input, button, textarea, select {
+    font: inherit;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* responsive devices choosed 
+  -sites: 1440px: 85%
+  -mini-sites: 1280px: 85%
+  -tablet: 768px: 100%
+  -phone: 480px: 100%
+  -mini-phones: 320px: 100%
+*/
+
+/* css variables  */
+:root {
+    /* colors  */
+    --primary-color: #007BFF;
+    --lightest-color: #FFFFFF;
+    --darkest-color: #333333;
+
+    --shadow-color: #33333345
+
+    /* font family */
+    --primary-ff: 'Kalam', cursive;
+    --neutral-ff: 'Poppins', sans-serif;
+
+    /* titles size  */
+    --section-primary-title: 48px;
+
+    --home-title: 48px;
+    --home-p: 18px;
+
+    --about-neutral-title: 40px;
+    --about-p: 18px;
+
+    --skills-title: 20px;
+
+
+    /* texts size  */
+
+    /* font weight  */
+    --regular-fw: 400;
+    --semi-bold-fw: 600;
+    --bold-fw: 700;
+
+    /* transitions */
+    --primary-transition: .3s;
+
+    /* border radius  */
+    --br-value: 32px;
+    --br-right: calc(var(--br-value) * 2) var(--br-value) calc(var(--br-value) * 2) var(--br-value);
+    --br-left: var(--br-value) calc(var(--br-value) * 2) var(--br-value) calc(var(--br-value) * 2);
+    --br-right-responsive: calc(var(--br-value) * 2) var(--br-value) calc(var(--br-value) * 2) var(--br-value);
+    --br-left-responsive: var(--br-value) calc(var(--br-value) * 2) var(--br-value) calc(var(--br-value) * 2);
+}
+
+@media screen and (max-width: 90em) {
+    :root {
+
+    }
+}
+
+@media screen and (max-width: 80em) {
+    :root {
+    /* titles size  */
+    --home-title: 40px;
+
+    }
+}
+
+@media screen and (max-width: 60em) {
+    :root {
+
+    }
+}
+
+@media screen and (max-width: 48em) {
+    :root {
+        /* titles size  */
+        --section-primary-title: 40px;
+
+        --home-title: 32px;
+        --home-p: 16px;
+
+        --about-neutral-title: 24px;
+
+
+        /* border radius  */
+        --br-right-responsive: var(--br-value);
+        --br-left-responsive: var(--br-value);
+        
+    }
+}
+
+@media screen and (max-width: 30em) {
+    :root {
+        
+        /* titles size  */
+        --section-primary-title: 32px;
+        --home-title: 24px;
+
+        --about-title: 16px;
+        --about-neutral-title: 20px;
+
+        --skills-title: 18px;
+    }
+}
+
+@media screen and (max-width: 20em) {
+    :root {
+        /* titles size  */
+        --section-primary-title: 24px;
+        
+        --home-title: 20px;
+        --home-p: 14px;
+        
+        --about-title: 14px;
+
+        --skills-title: 16px;
+    }
 }
