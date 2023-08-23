@@ -60,18 +60,30 @@ ul {
     --neutral-ff: 'Poppins', sans-serif;
 
     /* titles size  */
-    --section-primary-title: 48px;
+    --fs-navigation: 1.125rem;
 
-    --home-title: 48px;
-    --home-p: 18px;
+    --fs-section-primary-title: 3rem;
 
-    --about-neutral-title: 40px;
-    --about-p: 18px;
+    --fs-home-title: 3rem;
+    --fs-home-p: 1.125rem;
 
-    --skills-title: 20px;
+    --fs-about-neutral-title: 2.5rem;
+    --fs-about-p: 1.125rem;
 
+    --fs-skills-title: 1.25rem;
 
-    /* texts size  */
+    --fs-contact-label: 1.125rem;
+    --fs-contact-placeholder: 1.25rem;
+    --fs-contact-button: 1.25rem;
+
+    --fs-project-card-title: 2rem;
+    --fs-project-card-p: 1rem;
+    --fs-project-card-button: 1.125rem;
+
+    --fs-project-description-title: 1.25rem;
+
+    --fs-footer-title: 1.5rem;
+    --fs-footer-p: 1.125rem;
 
     /* font weight  */
     --regular-fw: 400;
@@ -87,6 +99,30 @@ ul {
     --br-left: var(--br-value) calc(var(--br-value) * 2) var(--br-value) calc(var(--br-value) * 2);
     --br-right-responsive: calc(var(--br-value) * 2) var(--br-value) calc(var(--br-value) * 2) var(--br-value);
     --br-left-responsive: var(--br-value) calc(var(--br-value) * 2) var(--br-value) calc(var(--br-value) * 2);
+
+    /* distances userd  */
+    --primary-dist: 100px;
+    --neutral-dist: calc(var(--primary-dist) / 2);
+    --third-dist: calc(var(--primary-dist) / 4);
+    --fourth-dist: calc(var(--primary-dist) / 8);
+
+    /* margins  */
+    --primary-margin: var(--primary-dist);
+    --neutral-margin: var(--neutral-dist);
+    --third-margin: var(--third-dist);
+    --fourth-margin: var(--fourth-dist);
+
+    /* paddings  */
+    --primary-paddings: var(--primary-dist);
+    --neutral-paddings: var(--neutral-dist);
+    --third-paddings: var(--third-dist);
+    --fourth-paddings: var(--fourth-dist);
+
+    /* gaps  */
+    --primary-gap: var(--primary-dist);
+    --neutral-gap: var(--neutral-dist);
+    --third-gap: var(--third-dist);
+    --fourth-gap: var(--fourth-dist);
 }
 
 @media screen and (max-width: 90em) {
@@ -98,7 +134,9 @@ ul {
 @media screen and (max-width: 80em) {
     :root {
     /* titles size  */
-    --home-title: 40px;
+    --fs-navigation: 1rem;
+
+    --fs-home-title: 2.5rem;
 
     }
 }
@@ -112,12 +150,15 @@ ul {
 @media screen and (max-width: 48em) {
     :root {
         /* titles size  */
-        --section-primary-title: 40px;
+        --fs-section-primary-title: 2.5rem;
 
-        --home-title: 32px;
-        --home-p: 16px;
+        --fs-home-title: 2rem;
+        --fs-home-p: 1rem;
 
-        --about-neutral-title: 24px;
+        --fs-about-neutral-title: 1.5rem;
+
+        --fs-footer-title: 1.25rem;
+        --fs-footer-p: 0.875rem;
 
 
         /* border radius  */
@@ -131,26 +172,56 @@ ul {
     :root {
         
         /* titles size  */
-        --section-primary-title: 32px;
-        --home-title: 24px;
+        --fs-section-primary-title: 2rem;
+        --fs-home-title: 1.5rem;
 
-        --about-title: 16px;
-        --about-neutral-title: 20px;
+        --about-title: 1rem;
+        --fs-about-neutral-title: 1.25rem;
 
-        --skills-title: 18px;
+        --fs-skills-title: 1.125rem;
+
+        --fs-contact-label: 0.875rem;
+        --fs-contact-placeholder: 1rem;
+        --fs-contact-button: 1.125rem;
+
+        --fs-project-card-title: 1.5rem;
+        --fs-project-description-title: 1.125rem;
+
+        --fs-footer-title: 1rem;
+        --fs-footer-p: 0.75rem;
     }
 }
 
 @media screen and (max-width: 20em) {
     :root {
         /* titles size  */
-        --section-primary-title: 24px;
-        
-        --home-title: 20px;
-        --home-p: 14px;
-        
-        --about-title: 14px;
+        --fs-navigation: 0.875rem;
 
-        --skills-title: 16px;
+        --fs-section-primary-title: 1.5rem;
+        
+        --fs-home-title: 1.25rem;
+        --fs-home-p: 0.875rem;
+        
+        --about-title: 0.875rem;
+
+        --fs-skills-title: 1rem;
+
+        --fs-contact-label: 0.75rem;
+        --fs-contact-placeholder: 0.875rem;
+        --fs-contact-button: 1rem;
+
+        --fs-project-card-title: 1.5rem;
+        --fs-project-card-p: 0.875rem;
+        --fs-project-card-button: 1rem;
+
+        --fs-project-description-title: 1rem;
+
+        --fs-footer-title: 0.875rem;
+        --fs-footer-p: 0.625rem;
     }
+}
+
+/* global rules  */
+body {
+    font-family: var(--neutral-ff);
 }

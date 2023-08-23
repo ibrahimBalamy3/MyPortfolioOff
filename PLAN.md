@@ -5,21 +5,21 @@
 2- in the index.css :
   2.1- css reset code (done)
   2.2- choose the responsive devices (done)
-  2.3- css variables (done until contact & projects)
-  2.4- css variables responsive part
+  2.3- css variables (done)
+  2.4- css variables responsive part (done)
   2.5- css global rules :
-    2.5.1- buttons styles (primary, neutral....)
+    2.5.1- buttons styles (primary, neutral....) || there is no unique style
     2.5.2- titles styles (primary, neutrals...)
     2.5.3- paragraphs styles 
     2.5.4- ...
     2.5.5- analyse flex and create a global classes..
 
-3- in the app: 
+3- in the app:  (done)
   3.1- install the react router
   3.2- setup the envirenement in the app
   3.2- test it
 
-4- arhitect the data :
+4- arhitect the data : (done)
   4.1- analyse the architecture
   4.2- create json file contain all data
   4.3- fetch it
