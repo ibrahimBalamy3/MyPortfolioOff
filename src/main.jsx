@@ -11,10 +11,13 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />}>
-        <Route index element={<h1>home</h1>} />
-        <Route path='/about' element={<h1>about</h1>} />
+          <Route index element={<h1>home</h1>} />
+          <Route path='/about-me' element={<h1>about</h1>} />
+          <Route path='/my-skills' element={<h1>my-skills</h1>} />
+          <Route path='/my-projects' element={<h1>my-projects</h1>} />
+          <Route path='/contact-me' element={<h1>contact-me</h1>} />
         </Route>
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 )

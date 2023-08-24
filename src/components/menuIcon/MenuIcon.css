@@ -1,0 +1,40 @@
+.header .container .menu-icon-container span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: var(--br-value);
+    cursor: pointer;
+    transition: var(--primary-transition);
+}
+
+.header .container .menu-icon-container span:first-child {
+    top: 0;
+}
+
+.header .container .menu-icon-container span:nth-child(2){
+    top: 9px;
+}
+
+.header .container .menu-icon-container span:last-child {
+    top: 18px;
+}
+
+.header .container .menu-icon-container.active span:first-child {
+    width: 80%;
+    top: 9px;
+    transform: rotate(45deg);
+}
+
+.header .container  .menu-icon-container.active span:nth-child(2){
+    width: 80%;
+    display: none;
+}
+
+.header .container .menu-icon-container.active span:last-child {
+    width: 80%;
+    top: 9px;
+    transform: rotate(-45deg);
+}

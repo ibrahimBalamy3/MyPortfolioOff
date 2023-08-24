@@ -53,7 +53,7 @@ ul {
     --lightest-color: #FFFFFF;
     --darkest-color: #333333;
 
-    --shadow-color: #33333345
+    --shadow-color: #33333345;
 
     /* font family */
     --primary-ff: 'Kalam', cursive;
@@ -92,6 +92,7 @@ ul {
 
     /* transitions */
     --primary-transition: .3s;
+    --neutral-transition: 1s;
 
     /* border radius  */
     --br-value: 32px;
@@ -113,16 +114,19 @@ ul {
     --fourth-margin: var(--fourth-dist);
 
     /* paddings  */
-    --primary-paddings: var(--primary-dist);
-    --neutral-paddings: var(--neutral-dist);
-    --third-paddings: var(--third-dist);
-    --fourth-paddings: var(--fourth-dist);
+    --primary-padding: var(--primary-dist);
+    --neutral-padding: var(--neutral-dist);
+    --third-padding: var(--third-dist);
+    --fourth-padding: var(--fourth-dist);
 
     /* gaps  */
     --primary-gap: var(--primary-dist);
     --neutral-gap: var(--neutral-dist);
     --third-gap: var(--third-dist);
     --fourth-gap: var(--fourth-dist);
+
+    --max-width: 1200px;
+    --header-height: 80px;
 }
 
 @media screen and (max-width: 90em) {

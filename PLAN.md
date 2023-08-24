@@ -12,7 +12,7 @@
     2.5.2- titles styles (primary, neutrals...)
     2.5.3- paragraphs styles 
     2.5.4- ...
-    2.5.5- analyse flex and create a global classes..
+    2.5.5- analyse flex and create a global classes..  
 
 3- in the app:  (done)
   3.1- install the react router
@@ -25,9 +25,9 @@
   4.3- fetch it
   4.4- create a useContext() and store fetched data in a context
 
-=> create main and container component & container should verify the design
+=> create main and container (done) component & container should verify the design
 
-5- header
+5- header (done)
   5.1- desktop header :
     5.1.1- analyse
     5.1.2- the markup

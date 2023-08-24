@@ -1,0 +1,24 @@
+.container {
+    width: 85%;
+    max-width: var(--max-width);
+    background-color: slateblue;
+}
+
+@media screen and (max-width: 60em) {
+    .container {
+        width: 100%;
+        padding-inline: var(--neutral-padding);
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .container {
+        padding-inline: var(--fourth-padding);
+    }
+}
+
+.container.centred {
+    margin-inline: auto;
+}
+
+

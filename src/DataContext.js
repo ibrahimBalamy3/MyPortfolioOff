@@ -12,7 +12,7 @@ import ProjectTwoImage from './assets/images/projectTwoImg.jpg'
 export const DataContext = createContext(null)
 
 export const Data = {
-    navigation: ["home", "about me", "my skills", "my projects", "contact me"],
+    navigation: ["home", "about-me", "my-skills", "my-projects", "contact-me"],
     aboutDescription: "I'm Ibrahim, a front-end developer passionate about turning concepts into impactful digital experiences. With a blend of technical expertise and creative problem-solving, I specialize in bringing ideas to life through clean and intuitive web designs. From wireframes to pixel-perfect implementations, I thrive on transforming visions into engaging user interfaces. Let's collaborate to transform your ideas into stunning digital solutions that make a lasting impression.",
     skills: [
         {
