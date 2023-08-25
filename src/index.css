@@ -66,6 +66,7 @@ ul {
 
     --fs-home-title: 3rem;
     --fs-home-p: 1.125rem;
+    --fs-home-btn: 1.125rem;
 
     --fs-about-neutral-title: 2.5rem;
     --fs-about-p: 1.125rem;
@@ -131,7 +132,9 @@ ul {
 
 @media screen and (max-width: 90em) {
     :root {
-
+        --fs-home-title: 2.5rem;
+        --fs-home-p: 1rem;
+        --fs-home-btn: 1rem;
     }
 }
 
@@ -140,7 +143,7 @@ ul {
     /* titles size  */
     --fs-navigation: 1rem;
 
-    --fs-home-title: 2.5rem;
+    --fs-home-title: 2.25rem;
 
     }
 }
@@ -178,6 +181,7 @@ ul {
         /* titles size  */
         --fs-section-primary-title: 2rem;
         --fs-home-title: 1.5rem;
+        --fs-home-btn: 1rem;
 
         --about-title: 1rem;
         --fs-about-neutral-title: 1.25rem;
@@ -205,6 +209,7 @@ ul {
         
         --fs-home-title: 1.25rem;
         --fs-home-p: 0.875rem;
+        --fs-home-btn: 0.875rem;
         
         --about-title: 0.875rem;
 
@@ -228,4 +233,10 @@ ul {
 /* global rules  */
 body {
     font-family: var(--neutral-ff);
+}
+
+section {
+    padding-top: var(--header-height);
+    width: 100%;
+    height: calc(100vh - var(--header-height));
 }

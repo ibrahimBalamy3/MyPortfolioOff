@@ -1,7 +1,7 @@
 import "./Container.css"
 
 export const Container = (props) => {
-  return <div className={`container ${props.type}`}>{props.children}</div>
+  return <div className={"container"}>{props.children}</div>
 
 }
 

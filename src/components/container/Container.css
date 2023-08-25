@@ -1,7 +1,12 @@
 .container {
     width: 85%;
+    height: inherit;
     max-width: var(--max-width);
-    background-color: slateblue;
+    /* background-color: slateblue; */
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 60em) {
@@ -16,9 +21,4 @@
         padding-inline: var(--fourth-padding);
     }
 }
-
-.container.centred {
-    margin-inline: auto;
-}
-
 

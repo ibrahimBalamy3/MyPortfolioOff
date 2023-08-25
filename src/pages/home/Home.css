@@ -1,0 +1,175 @@
+.home .container {
+    flex-direction: row;
+    gap: var(--neutral-gap);
+    z-index: inherit;
+}
+
+@media screen and (max-width: 48em) {
+    .home .container {
+        flex-direction: column;
+        padding-top: var(--primary-padding);
+    }
+}
+
+@media screen and (max-width: 30em) {
+    .home .container {
+        flex-direction: column;
+        padding-top: calc(var(--neutral-padding) + var(--third-padding));
+    }
+}
+
+@media screen and (max-width: 20em) {
+    .home .container {
+        flex-direction: column;
+        padding-top: var(--neutral-padding);
+    }
+}
+
+.home .container .content {
+    max-width: 50%;
+    transform: translateY(-5%);
+    z-index: inherit;
+}
+
+@media screen and (max-width: 48em) {
+    .home .container .content {
+        max-width: 80%;
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 30em) {
+    .home .container .content {
+        max-width: 100%;
+    }
+}
+
+.home .container .content .title {
+    font-family: var(--primary-ff);
+    font-size: var(--fs-home-title);
+    font-weight: var(--bold-fw);
+    color: var(--primary-color);
+    text-align: left;
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 48em) {
+    .home .container .content .title {
+        text-align: center;
+    }
+}
+
+.home .container .content p {
+    max-width: 80%;
+    font-size: var(--fs-home-p);
+    font-weight: var(--regular-fw);
+    color: var(--darkest-color);
+    text-align: left;
+    margin-block: var(--fourth-margin) var(--neutral-margin);
+}
+
+@media screen and (max-width: 48em) {
+    .home .container .content p {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+.home .container .buttons-container {
+    width: 80%;
+    height: var(--neutral-dist);
+    display: flex;
+    align-items: center;
+    gap: var(--neutral-gap);
+}
+
+@media screen and (max-width: 60em) {
+    .home .container .buttons-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .home .container .buttons-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    .home .container .buttons-container {
+        gap: var(--third-gap);
+    }
+}
+
+.home .container .buttons-container a:first-child,
+.home .container .buttons-container a:last-child {
+    width: calc(50% - var(--third-gap));
+    height: inherit;
+    border-radius: var(--br-left);
+    font-size: var(--fs-home-btn);
+    font-weight: var(--semi-bold-fw);
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: 3px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--primary-transition);
+}
+
+.home .container .buttons-container a:first-child:hover,
+.home .container .buttons-container a:last-child:hover {
+    background-color: var(--lighetst-color);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 5px 0 20px  5px var(--shadow-color);
+    transform: translateY(5px);
+}
+
+@media screen and (max-width: 30em) {
+    .home .container .buttons-container a:first-child,
+    .home .container .buttons-container a:last-child {
+        width: calc(50% - var(--fourth-gap));
+    }
+}
+
+.home .container .buttons-container a:first-child {
+    background-color: var(--primary-color);
+    color: var(--lightest-color);
+}
+
+.home .container .buttons-container a:last-child {
+    background-color: var(--lightest-color);
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 48em) {
+    .home .container .buttons-container a:last-child {
+        border-radius: var(--br-right);
+    }
+}
+
+.home .container .image-container {
+    width: 400px;
+    aspect-ratio: 1;
+    background-color: var(--darkest-color);
+    border: none;
+    border-radius: var(--br-right-responsive);
+    transform: translateY(-5%);
+}
+
+@media screen and (max-width: 48em) {
+    .home .container .image-container {
+        border-end-end-radius: 0;
+        border-end-start-radius: 0;
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 30em) {
+    .home .container .image-container {
+        width: 100%;
+    }
+}

@@ -20,7 +20,7 @@ export const Header = () => {
 
   return (
     <header className="header">
-        <Container type={'centred'}>
+        <Container type={'header'}>
             <Link to={"/"}>
                 <img src={Logo} alt="logo" />
             </Link>
